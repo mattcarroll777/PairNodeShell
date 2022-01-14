@@ -1,6 +1,6 @@
 process.stdout.write('prompt >');
 process.stdin.on('data', (data) => {
-    const cmd = data.toString().trim();
+    const cmd = data.toString().trim().split(',');
     process.stdout.write('You typed this: ' + cmd);
     process.stdout.write('\nprompt > ');
 })
